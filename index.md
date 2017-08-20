@@ -63,8 +63,7 @@ function fancyAlert(arg) {
 Convert ASCII strings into hex values
 ```bash
 echo -n "text" | od -A n -t x1 | sed 's/ /\\x/g'
-``
-
+```
 
 ### Jekyll Themes
 
