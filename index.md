@@ -30,7 +30,7 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### VHDL Test
 
-```VHDL
+```vhdl
 -------------------------------------------------------
 -- Design Name : mux_using_with
 -- File Name   : mux_using_with.vhd
