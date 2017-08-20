@@ -53,7 +53,6 @@ begin
                din_1 when others;   
 end architecture;
 ```
-
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
@@ -61,6 +60,10 @@ function fancyAlert(arg) {
   }
 }
 ```
+Convert ASCII strings into hex values
+```bash
+echo -n "text" | od -A n -t x1 | sed 's/ /\\x/g'
+``
 
 
 ### Jekyll Themes
