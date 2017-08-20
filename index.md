@@ -28,6 +28,32 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
+### VHDL Test
+
+```VHDL
+-------------------------------------------------------
+-- Design Name : mux_using_with
+-- File Name   : mux_using_with.vhd
+-- Function    : 2:1 Mux using with-select
+-------------------------------------------------------
+library ieee;
+    use ieee.std_logic_1164.all;
+entity mux_using_with is
+    port (
+        din_0   :in  std_logic; -- Mux first input
+        din_1   :in  std_logic; -- Mux Second input
+        sel     :in  std_logic; -- Select input
+        mux_out :out std_logic  -- Mux output
+    );
+end entity;
+architecture behavior of mux_using_with is
+begin
+    with (sel) select
+    mux_out <= din_0 when '0',
+               din_1 when others;   
+end architecture;
+```
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IEEE1164/ieee1164.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
