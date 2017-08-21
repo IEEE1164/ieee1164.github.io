@@ -1,2 +1,3 @@
 theme: jekyll-theme-minimal
 highlighter: rogue
+kramdown.syntax_highlighter_opts.block.line_numbers = true
