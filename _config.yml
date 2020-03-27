@@ -1,5 +1,5 @@
 theme: jekyll-theme-cayman
-#highlighter: rogue
+highlighter: rogue
 #kramdown:
   #syntax_highlighter_opts:
     #block:
