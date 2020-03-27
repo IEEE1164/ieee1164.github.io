@@ -54,6 +54,8 @@ begin
 end architecture;
 ```
 
+# Javascript Test
+
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
@@ -61,7 +63,9 @@ function fancyAlert(arg) {
   }
 }
 ```
-Convert ASCII strings into hex values
+
+# Convert ASCII strings into hex values
+
 ```bash
 echo -n "text" | od -A n -t x1 | sed 's/ /\\x/g'
 ```
