@@ -1,4 +1,5 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
+theme: minima
 #highlighter: rogue
 #kramdown:
   #syntax_highlighter_opts:
