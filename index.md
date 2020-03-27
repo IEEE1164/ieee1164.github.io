@@ -53,7 +53,7 @@ library ieee;
 entity mux_using_with is
     port (
         din_0   :in  std_logic; -- Mux first input
-        din_1   :in  std_logic; -- Mux Second input
+        din_1   :in  std_logic; -- Mux Second input Mux Second input Mux Second input Mux Second input Mux Second input Mux Second input
         sel     :in  std_logic; -- Select input
         mux_out :out std_logic  -- Mux output
     );
