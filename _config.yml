@@ -3,5 +3,5 @@ theme: jekyll-theme-cayman
 kramdown:
   syntax_highlighter_opts:
     block:
-      line_numbers: true
-      wrap: true
+      line_numbers: false
+      wrap: false
