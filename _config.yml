@@ -2,8 +2,8 @@
 theme: jekyll-theme-leap-day
 markdown: kramdown
 #highlighter: rogue
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-      wrap: true
+#kramdown:
+  #syntax_highlighter_opts:
+    #block:
+      #line_numbers: true
+      #wrap: true
