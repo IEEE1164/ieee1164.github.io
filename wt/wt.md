@@ -5,7 +5,7 @@ Settings for Windows Terminal can be created using JSON.
 [//]: # ({% include_relative /wt/profiles.json %})
 [//]: # ({% endhighlight %})
 
-{% highlight json %}
+```json
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
 {
@@ -50,4 +50,4 @@ Settings for Windows Terminal can be created using JSON.
     "schemes": [],
     "keybindings": []
 }
-{% endhighlight %}
+```
