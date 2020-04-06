@@ -40,7 +40,9 @@ Syntax highlighted code block
 
 {% include_relative /gnuplot/gnuplot.md %}
 
-# VHDL Test
+{% include_relative /vhdl/vhdl.md %}
+
+# VHDL1 Test
 
 ```vhdl
 -------------------------------------------------------
