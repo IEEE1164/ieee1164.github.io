@@ -38,7 +38,9 @@ Syntax highlighted code block
 ```
 
 {% include_relative /gnuplot/gnuplot.md %}
+
 {% include_relative /vhdl/vhdl.md %}
+
 {% include_relative /wt/wt.md %}
 
 # Javascript
