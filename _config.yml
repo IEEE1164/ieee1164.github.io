@@ -1,5 +1,6 @@
 #theme: jekyll-theme-cayman
 theme: jekyll-theme-leap-day
+markdown: kramdown
 #highlighter: rogue
 #kramdown:
   #syntax_highlighter_opts:
