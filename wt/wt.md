@@ -1,5 +1,12 @@
 # Windows Terminal
-Settings for Windows Terminal can be created using JSON. 
+Settings for Windows Terminal can be created using JSON.
+
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 ```json
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
