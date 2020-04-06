@@ -37,11 +37,6 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-frfrfr
-
-[/gnuplot/gnuplot.md](/gnuplot/gnuplot.md)
-
-dedede
 
 {% include_relative /gnuplot/gnuplot.md %}
 
@@ -71,7 +66,6 @@ begin
 end architecture;
 ```
 # Javascript
-
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
