@@ -1,10 +1,5 @@
 # Windows Terminal
 Settings for Windows Terminal can be created using JSON. 
-
-[//]: # ({% highlight json %})
-[//]: # ({% include_relative /wt/profiles.json %})
-[//]: # ({% endhighlight %})
-
 ```json
 // To view the default settings, hold "alt" while clicking on the "Settings" button.
 // For documentation on these settings, see: https://aka.ms/terminal-documentation
