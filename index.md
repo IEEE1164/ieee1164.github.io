@@ -39,6 +39,8 @@ Syntax highlighted code block
 
 [/gnuplot/gnuplot.md](/gnuplot/gnuplot.md)
 
+{% include_relative /gnuplot/gnuplot.md %}
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 # VHDL Test
