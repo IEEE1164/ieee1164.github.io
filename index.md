@@ -43,7 +43,7 @@ frfrfr
 
 dedede
 
-{% include_relative ./gnuplot/gnuplot.md %}
+{% include_relative /gnuplot/gnuplot.md %}
 
 # VHDL Test
 
