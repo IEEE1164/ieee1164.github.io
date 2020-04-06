@@ -37,6 +37,12 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+frfrfr
+
+[/gnuplot/gnuplot.md](/gnuplot/gnuplot.md)
+
+dedede
+
 {% include_relative ./gnuplot/gnuplot.md %}
 
 # VHDL Test
