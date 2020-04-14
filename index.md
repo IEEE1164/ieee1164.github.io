@@ -41,6 +41,8 @@ Syntax highlighted code block
 
 {% include_relative /vhdl/vhdl.md %}
 
+{% include_relative /tcl/tcl.md %}
+
 {% include_relative /wt/wt.md %}
 
 # Javascript
