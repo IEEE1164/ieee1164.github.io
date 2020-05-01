@@ -39,6 +39,8 @@ Syntax highlighted code block
 
 {% include_relative /gnuplot/gnuplot.md %}
 
+{% include_relative /openssh/openssh.md %}
+
 {% include_relative /vhdl/vhdl.md %}
 
 {% include_relative /tcl/tcl.md %}
