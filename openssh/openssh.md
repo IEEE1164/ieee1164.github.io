@@ -23,7 +23,7 @@ Wandlung vom OpenSSH-Format in SSH2-Format:
 `$ ssh-keygen -e -f openssh.pub > ssh2.pub`  
 
 ## Schnellzugriff per Konsole
-Um einen Schnellzugriff auf SSH-Verbindungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des nebenstehenden Inhalts in diese Datei und der Einstellungen. Danach lässt sich eine OpenSSH-Verbindung in der Konsole über die Eingabe von `$ ssh shortcut` aufbauen.
+Um einen Schnellzugriff auf SSH-Verbindungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des nebenstehenden Inhalts in diese Datei und der Einstellungen. Danach lässt sich eine OpenSSH-&shy;Verbindung in der Konsole über die Eingabe von `$ ssh shortcut` aufbauen.
 ```
 ### ~/.ssh/config ###
 Host shortcut
