@@ -12,10 +12,10 @@ Setzen der Rechte der Konfigurationsdatei: `$ chmod 600 config`
 ## Public-Key Schlüsselformate
 Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.
 
-Wandlung vom SSH2-Format in OpenSSH-Format:
+Wandlung vom SSH2-Format in OpenSSH-Format:\
 `$ ssh-keygen -i -f ssh2.pub > openssh.pub`
 
-Wandlung vom OpenSSH-Format in SSH2-Format:
+Wandlung vom OpenSSH-Format in SSH2-Format:\
 `$ ssh-keygen -e -f openssh.pub > ssh2.pub`
 
 ## Schnellzugriff per Konsole
