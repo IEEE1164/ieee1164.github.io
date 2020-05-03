@@ -2,7 +2,7 @@
 # Secure Shell
 
 Die Secure Shell ermöglicht den verschlüsselten Zugang auf die Kommandozeile entfernter Rechner. Weiterhin bietet sie die Möglichkeit des verschlüsselten Datentransfers. Die Authen&shy;ti&shy;fizierung kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
-Um eine passwortlose Einwahl mit Hilfe von Public-Keys zu ermöglichen muss folgendermaßen vorgegangen werden. Erstens wird das Schlüssel&shy;paar (Private-Key und Public-Key) erzeugt. Zweitens wird der Public-Key auf den entfernten Rechner übertragen und in der dortigen SSH-Konfigurationsdatei eingetragen. Im Anschluss werden die Zugriffsrechte der Konfigurationsdatei angepasst und die Verbindung über&shy;prüft. Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen und vor fremdem Zugriff geschützt werden muss, während der Public-Key frei verteilt werden darf. Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird. Es ist ratsam den Dateinamen zu definieren. Zum einen sorgt dies für eine einfache Zu&shy;ordnung von Schlüsseldateien zu Verbindungspartnern und zum anderen wird damit vermieden versehentlich falsche Schlüssel zu übertragen. Das Übertragen des Public-Keys auf den entfernten Rechner. Dabei wird der öffentliche Schlüssel des Nutzers in die Datei `~/.ssh/authorized_keys` kopiert bzw. angehängt. Der Befehl `ssh-copy-id` ist eine ausführbare Datei, sondern ein Shell Skript. Er steht somit nur unter Linux zur Verfügung. Die Namenskonvention von OpenSSH versieht den öffentlichen Schlüssel mit einer Endung, den privaten jedoch nicht (public `<file.pub>`, privat `<file>`). Hier eine Beispielsitzung auf dem lokalen Rechner:  
+Um eine passwortlose Einwahl mit Hilfe von Public-Keys zu ermöglichen muss folgendermaßen vorgegangen werden. Erstens wird das Schlüssel&shy;paar (Private-Key und Public-Key) erzeugt. Zweitens wird der Public-Key auf den entfernten Rechner übertragen und in der dortigen SSH-Konfigurationsdatei eingetragen. Im Anschluss werden die Zugriffsrechte der Konfigurationsdatei angepasst und die Verbindung über&shy;prüft. Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen und vor fremdem Zugriff geschützt werden muss, während der Public-Key frei verteilt werden darf. Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird. Es ist ratsam den Dateinamen zu definieren. Zum einen sorgt dies für eine einfache Zu&shy;ordnung von Schlüsseldateien zu Verbindungspartnern und zum anderen wird damit vermieden versehentlich falsche Schlüssel zu übertragen. Das Übertragen des Public-Keys auf den entfernten Rechner. Dabei wird der öffentliche Schlüssel des Nutzers in die Datei `~/.ssh/authorized_keys` kopiert bzw. angehängt. Der Befehl `ssh-copy-id` ist eine ausführbare Datei, sondern ein Shell Skript. Er steht somit nur unter Linux zur Verfügung. Die Namenskonvention von OpenSSH versieht den öffentlichen Schlüssel mit einer Endung, den privaten jedoch nicht (public `file.pub`, privat `file`). Hier eine Beispielsitzung auf dem lokalen Rechner:  
 Erzeugen eines neuen Verzeichnisses:  
 `$ cd ~ && mkdir .ssh && cd $_`  
 Schlüsselpaar (Private-Key und Public-Key) erzeugen:  
@@ -16,7 +16,6 @@ Setzen der Rechte der Konfigurationsdatei:
 
 ## Public-Key Schlüsselformate
 Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.  
-
 Wandlung vom SSH2-Format in OpenSSH-Format:  
 `$ ssh-keygen -i -f ssh2.pub > openssh.pub`  
 Wandlung vom OpenSSH-Format in SSH2-Format:  
@@ -42,6 +41,5 @@ Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbind
 ## Einstellungen für PuTTY
 Start von PuTTY mit einer gespeicherten Session:  
 `putty.exe -load "Session Name"`  
-
 Start von Pageant mit privaten Schlüsseln:  
 `pageant.exe C:\private1.ppk C:\private2.ppk`
