@@ -10,9 +10,11 @@ Erzeugen einer Konfigurationsdatei: `$ touch config`\
 Setzen der Rechte der Konfigurationsdatei: `$ chmod 600 config`
 
 ## Public-Key Schlüsselformate
-Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.\
-Wandlung vom SSH2-Format in OpenSSH-Format: `$ ssh-keygen -i -f ssh2.pub > openssh.pub`\
-Wandlung vom OpenSSH-Format in SSH2-Format: `$ ssh-keygen -e -f openssh.pub > ssh2.pub`\
+Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.
+
+Wandlung vom SSH2-Format in OpenSSH-Format: `$ ssh-keygen -i -f ssh2.pub > openssh.pub`
+
+Wandlung vom OpenSSH-Format in SSH2-Format: `$ ssh-keygen -e -f openssh.pub > ssh2.pub`
 
 ## Schnellzugriff per Konsole
 Um einen Schnellzugriff auf SSH-Verbindungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des nebenstehenden Inhalts in diese Datei und der Einstellungen. Danach lässt sich eine OpenSSH-Verbindung in der Konsole über die Eingabe von `$ ssh shortcut` aufbauen.
