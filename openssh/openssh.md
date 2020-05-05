@@ -15,7 +15,7 @@ Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen u
 
 > Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird.
 
-Hier eine Beispielsitzung auf dem lokalen Rechner inklusive sem erstellens der Konfigurations&shy;datei für die Nutzung des Schnellzugriffs:   
+Hier eine Beispielsitzung auf dem lokalen Rechner inklusive des erstellens der Konfigurations&shy;datei für die Nutzung des Schnellzugriffs:   
 Erzeugen eines neuen Verzeichnisses:  
 `$ cd ~ && mkdir .ssh && cd $_`  
 Schlüsselpaar (Private-Key und Public-Key) erzeugen:  
@@ -27,13 +27,6 @@ Erzeugen einer Konfigurationsdatei:
 Setzen der Rechte der Konfigurationsdatei:  
 `$ chmod 600 config`  
 
-## Public-Key Schlüsselformate
-Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.  
-Wandlung vom SSH2-Format in OpenSSH-Format:  
-`$ ssh-keygen -i -f ssh2.pub > openssh.pub`  
-Wandlung vom OpenSSH-Format in SSH2-Format:  
-`$ ssh-keygen -e -f openssh.pub > ssh2.pub`  
-
 ## Schnellzugriff per Konsole
 Um einen Schnellzugriff auf SSH-Verbindungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des nebenstehenden Inhalts in diese Datei und der Einstellungen. Danach lässt sich eine OpenSSH-&shy;Verbindung in der Konsole über die Eingabe von `$ ssh shortcut` aufbauen.
 ```
@@ -44,6 +37,14 @@ Host shortcut
   User user
   IdentityFile ~/.ssh/prk_file
 ```
+
+## Public-Key Schlüsselformate
+Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.  
+Wandlung vom SSH2-Format in OpenSSH-Format:  
+`$ ssh-keygen -i -f ssh2.pub > openssh.pub`  
+Wandlung vom OpenSSH-Format in SSH2-Format:  
+`$ ssh-keygen -e -f openssh.pub > ssh2.pub`  
+
 ## Wahl des Verschlüsselungsverfahrens
 Die Auswahl spezifischer Verschlüsselungs&shy;verfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unterstützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
 Die Ausgabe der unterstützten Verschlüsselungs&shy;verfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Ausgabe der OpenSSH-Version per: `$ ssh -V`.
