@@ -15,7 +15,7 @@ Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen u
 
 > Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird.
 
-Hier eine Beispielsitzung auf dem lokalen Rechner:   
+Hier eine Beispielsitzung auf dem lokalen Rechner inklusive sem erstellens der Konfigurations&shy;datei für die Nutzung des Schnellzugriffs:   
 Erzeugen eines neuen Verzeichnisses:  
 `$ cd ~ && mkdir .ssh && cd $_`  
 Schlüsselpaar (Private-Key und Public-Key) erzeugen:  
