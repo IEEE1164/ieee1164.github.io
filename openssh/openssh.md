@@ -7,7 +7,7 @@ Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, 
 Um eine passwortlose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
 
 1. Erstens wird das Schlüssel&shy;paar (Private-Key und Public-Key) erzeugt.
-1. Zweitens wird der Public-Key auf den entfernten Rechner übertragen und in der dortigen SSH-Konfigurationsdatei eingetragen.
+1. Zweitens wird der Public-Key auf den entfernten Rechner übertragen und in der dortigen SSH-Konfigurationsdatei ein&shy;ge&shy;tragen.
 1. Im Anschluss werden die Zugriffsrechte der Konfigurationsdatei angepasst und die Verbindung über&shy;prüft. 
 
 > Der private Schlüssel sollte mit einem Passwort geschützt und niemals öffentlich Zugänglich gemacht werden.
@@ -42,7 +42,7 @@ Host shortcut
   IdentityFile ~/.ssh/prk_file
 ```
 ## Wahl des Verschlüsselungsverfahrens
-Die Auswahl spezifischer Verschlüsselungsverfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unterstützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
+Die Auswahl spezifischer Verschlüsselungs&shy;verfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unterstützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
 Die Ausgabe der unterstützten Verschlüsselungsverfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Ausgabe der OpenSSH-Version per: `$ ssh -V`.
 
 ## SSH-Alternative für Verbindungen über roaming
