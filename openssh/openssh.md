@@ -31,7 +31,7 @@ Host shortcut
   User user
   IdentityFile ~/.ssh/prk_file
 ```
-## Auswahl des Verschlüsselungsverfahrens
+## Wahl des Verschlüsselungsverfahrens
 Die Auswahl spezifischer Verschlüsselungsverfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unterstützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
 Die Ausgabe der unterstützten Verschlüsselungsverfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Ausgabe der OpenSSH-Version per: `$ ssh -V`.
 
