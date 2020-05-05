@@ -6,9 +6,10 @@ Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die P
 Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren. Letzteres bietet neben einer sicheren Einwahl ebenfalls den Komfort der passwortlosen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
 Um eine passwortlose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
 
-1. Erstens wird das Schlüssel&shy;paar (Private-Key und Public-Key) erzeugt.
-1. Zweitens wird der Public-Key auf den entfernten Rechner übertragen und in der dortigen SSH-Konfigurationsdatei ein&shy;ge&shy;tragen.
-1. Im Anschluss werden die Zugriffsrechte der Konfigurationsdatei angepasst und die Verbindung über&shy;prüft. 
+1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
+1. Übertragen des Public-Keys auf den entfernten Rechner (eintragen in die SSH-Konfigurations&shy;datei).
+1. Anpassen der Zugriffsrechte für die Konfigurationsdatei.
+1. Testen der Verbindung. 
 
 > Der private Schlüssel sollte mit einem Passwort geschützt und niemals öffentlich Zugänglich gemacht werden.
 
