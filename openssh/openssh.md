@@ -1,7 +1,7 @@
 <!-- soft hyphen &shy; -->
 # Secure Shell
 
-Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie ermöglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen entwickelt. Die daraus entstandend kommerzielle Software wird von der Firma Tectia vertrieben. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in dieser Beschreibung genutzt wird. Nennenswert ist noch die Secure Shell Variante namens Dropbear, deren Fokus auf eingebetteten Systemen liegt.
+Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen entwickelt. Die daraus entstandend kommerzielle Software wird von der Firma Tectia vertrieben. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in dieser Beschreibung genutzt wird. Nennenswert ist noch die Secure Shell Variante namens Dropbear, deren Fokus auf eingebetteten Systemen liegt.
 
 Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren. Letzteres bietet neben einer sicheren Einwahl ebenfalls den Komfort der passwortlosen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
 Um eine passwortlose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
@@ -15,7 +15,7 @@ Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen u
 
 > Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird.
 
-Hier eine Beispielsitzung auf dem lokalen Rechner inklusive des erstellens der Konfigurations&shy;datei für die Nutzung des Schnellzugriffs:   
+Hier eine Beispielsitzung auf dem lokalen Rechner inklusive des erstellens der Konfigurations&shy;datei für die Nutzung des Schnell&shy;zugriffs:   
 Erzeugen eines neuen Verzeichnisses:  
 `$ cd ~ && mkdir .ssh && cd $_`  
 Schlüsselpaar (Private-Key und Public-Key) erzeugen:  
@@ -39,7 +39,7 @@ Host shortcut
 ```
 
 ## Public-Key Schlüsselformate
-Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzufügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia übernommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format gewandelt werden.  
+Mit Hilfe eines Schlüsselspaars lässt sich die Einwahl auf mehrere entfernte Rechner realisieren. Es ist jedoch ratsam für jeden entfernten Rechner ein eigenes Schlüsselpaar anzulegen um ein das entfernen und hinzu&shy;fügen einzelner Schlüssels zu ermöglichen. Es existieren zwei verbreitete Formate für Schlüssel. Zum einen das von Tectia über&shy;nommene SSH2-Format (wird von PuTTY genutzt) und das OpenSSH-Format. Soll exemplarisch ein Schlüssel der unter PuTTY erzeugt wurde auf einem Linux-Rechner verwendet werden, so muss zuvor vom  SSH2-Format in das OpenSSH-Format ge&shy;wandelt werden.  
 Wandlung vom SSH2-Format in OpenSSH-Format:  
 `$ ssh-keygen -i -f ssh2.pub > openssh.pub`  
 Wandlung vom OpenSSH-Format in SSH2-Format:  
@@ -47,10 +47,10 @@ Wandlung vom OpenSSH-Format in SSH2-Format:
 
 ## Wahl des Verschlüsselungsverfahrens
 Die Auswahl spezifischer Verschlüsselungs&shy;verfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unterstützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
-Die Ausgabe der unterstützten Verschlüsselungs&shy;verfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Ausgabe der OpenSSH-Version per: `$ ssh -V`.
+Die Ausgabe der unterstützten Verschlüsselungs&shy;verfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Aus&shy;gabe der OpenSSH-Version per: `$ ssh -V`.
 
 ## SSH-Alternative für Verbindungen über roaming
-Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbindungen. Somit ist es möglich eine Einwahl zwischen verschiedenen Verbindungsarten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Verbindungsabbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
+Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbindungen. Somit ist es möglich eine Einwahl zwischen verschiedenen Verbindungs&shy;arten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Verbindungsabbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
 
 ## Einstellungen für PuTTY
 Start von PuTTY mit einer gespeicherten Session:  
