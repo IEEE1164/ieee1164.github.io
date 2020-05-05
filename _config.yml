@@ -1,5 +1,6 @@
 #theme: jekyll-theme-cayman
-theme: jekyll-theme-leap-day
+#theme: jekyll-theme-leap-day
+theme: minima
 markdown: kramdown
 highlighter: rouge
 #kramdown:
