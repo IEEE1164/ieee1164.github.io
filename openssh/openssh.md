@@ -58,8 +58,5 @@ Start von PuTTY mit einer gespeicherten Session:
 `putty.exe -load "Session Name"`  
 Start von Pageant mit privaten Schlüsseln:  
 `pageant.exe C:\private1.ppk C:\private2.ppk`
-
 <!-- ![MM](pictures/Putty_color.png)   -->
-
-![MM](/openssh/pictures/Putty_color.png)  
-*The caption for my image*
+<!-- ![MM](/openssh/pictures/Putty_color.png) -->
