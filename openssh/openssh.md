@@ -47,7 +47,7 @@ Wandlung vom OpenSSH-Format in SSH2-Format:
 
 ## Wahl des Verschlüsselungsverfahrens
 Die Auswahl spezifischer Verschlüsselungs&shy;verfahren geschieht über den Schalter `-c`. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der unter&shy;stützten Verfahren ausgegeben: `$ ssh -c aes128-ctr user@host`
-Die Ausgabe der unterstützten Verschlüsselungs&shy;verfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Aus&shy;gabe der OpenSSH-Version per: `$ ssh -V`.
+Die Ausgabe der unterstützten Verschlüssel&shy;ungs&shy;verfahren (seit Version v6.3) über: `$ ssh -Q cipher`. Zur Fehlersuche lassen sich detaillierte Informationen ausgeben über: `$ ssh -v`. Aus&shy;gabe der OpenSSH-Version per: `$ ssh -V`.
 
 ## SSH-Alternative für Verbindungen über roaming
 Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbind&shy;ungen. Somit ist es möglich eine Einwahl zwischen ver&shy;schiede&shy;nen Verbind&shy;ungs&shy;arten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Verbindungsabbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
