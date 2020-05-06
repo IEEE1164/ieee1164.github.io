@@ -61,3 +61,7 @@ Start von Pageant mit privaten Schlüsseln:
 `pageant.exe C:\private1.ppk C:\private2.ppk`
 <!-- ![MM](pictures/Putty_color.png)   -->
 <!-- ![MM](/openssh/pictures/Putty_color.png) -->
+
+![foo *bar*]
+
+[foo *bar*]: /openssh/pictures/Putty_color.png "train & tracks"
