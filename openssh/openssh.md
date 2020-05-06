@@ -53,7 +53,8 @@ Die Ausgabe der unterstützten Verschlüssel&shy;ungs&shy;verfahren (seit Versio
 Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbind&shy;ungen. Somit ist es möglich eine Einwahl zwischen ver&shy;schiede&shy;nen Verbind&shy;ungs&shy;arten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Verbindungsabbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
 
 ## Einstellungen für PuTTY/WinSCP
-PuTTY ist ein unter Microsoft Windows verbreiteter SSH-Client, es dient allerdings nur dazu die Kommando&shy;zeile entfernter Rechner zu&shy;gäng&shy;lich zu machen. Datei&shy;transfers sind nicht mit PuTTY möglich, hierfür kann WinSCP genutzt werden. Beide Programme stehen unter einer freien Lizenz. 
+PuTTY ist ein unter Microsoft Windows verbreiteter SSH-Client, es beinhaltet ebenfalls SCP (`pscp.exe`), SFTP (`psftp.exe`) und einen Agent (`pageant`). Mit `plink` steht eine Kommando&shy;zeilenversion des PuTTY-Clients zur Verfügung. 
+
 Start von PuTTY mit einer gespeicherten Session:  
 `putty.exe -load "Session Name"`  
 Start von Pageant mit privaten Schlüsseln:  
