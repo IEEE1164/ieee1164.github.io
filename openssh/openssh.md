@@ -59,5 +59,5 @@ Start von PuTTY mit einer gespeicherten Session:
 Start von Pageant mit privaten Schlüsseln:  
 `pageant.exe C:\private1.ppk C:\private2.ppk`
 
-![](pictures/Putty_color.png)
+![](pictures/Putty_color.png)  
 *Image caption right below*
