@@ -28,7 +28,7 @@ Setzen der Rechte der Konfigurationsdatei:
 `$ chmod 600 config`  
 
 ## Schnellzugriff per Konsole
-Um einen Schnellzugriff auf SSH-Verbind&shy;ungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des unten stehenden Inhalts in diese Datei. Danach lässt sich eine OpenSSH-Verbind&shy;ung in der Konsole über die Eingabe von `$ ssh shortcut` aufbauen.
+Um einen Schnellzugriff auf SSH-Verbind&shy;ungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des unten stehenden Inhalts in diese Datei. Danach lässt sich eine OpenSSH-Verbind&shy;ung in der Konsole über die Eingabe von `ssh shortcut` aufbauen.
 ```
 ### ~/.ssh/config ###
 Host shortcut
