@@ -1,13 +1,13 @@
 <!-- soft hyphen &shy; -->
 # Secure Shell
 
-Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen entwickelt. Dessen kommerzielle Software von der Firma Tectia entwickelt wird. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch die Secure Shell Variante namens Dropbear, deren Fokus auf ein&shy;gebetteten Systemen liegt.
+Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt. Dessen kommerzielle Software von der Firma Tectia entwickelt wird. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch die Secure Shell Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.
 
 Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren. Letzteres bietet neben einer sicheren Einwahl ebenfalls den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
 Um eine passwort&shy;lose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
 
 1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
-1. Übertragen des Public-Keys auf den entfernten Rechner (eintragen in die SSH-Konfigurations&shy;datei).
+1. Übertragen des Public-Keys auf den ent&shy;fernten Rechner (eintragen in die SSH-Konfigurations&shy;datei).
 1. Anpassen der Zugriffsrechte für die Konfigurationsdatei.
 1. Testen der Verbindung. 
 
@@ -53,7 +53,7 @@ Die Ausgabe der unterstützten Verschlüssel&shy;ungs&shy;verfahren (seit Versio
 Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbind&shy;ungen. Somit ist es möglich eine Einwahl zwischen ver&shy;schiede&shy;nen Verbind&shy;ungs&shy;arten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Verbindungsabbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
 
 ## Einstellungen für PuTTY
-PuTTY ist ein unter Microsoft Windows verbreiteter SSH-Client, es beinhaltet SCP (`pscp.exe`), SFTP (`psftp.exe`) und einen Agent (`pageant.exe`). Mit `plink.exe` steht eine Kommando&shy;zeilenversion des PuTTY-Clients zur Verfügung, somit ist es von der CLI als auch der GUI nutzbar.
+PuTTY ist ein unter Microsoft Windows ver&shy;brei&shy;teter SSH-Client, es beinhaltet SCP (`pscp.exe`), SFTP (`psftp.exe`) und einen Agent (`pageant.exe`). Mit `plink.exe` steht eine Kommando&shy;zeilenversion des PuTTY-Clients zur Verfügung, somit ist es von der CLI als auch der GUI nutzbar.
 
 Start von PuTTY mit einer gespeicherten Session:  
 `putty.exe -load "Session Name"`  
