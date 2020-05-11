@@ -7,7 +7,7 @@ Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die P
 $ ssh user@host
 ```  
 ## Einwahl über Public-Key
-Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren. Letzteres bietet neben einer sicheren Einwahl ebenfalls den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
+Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren (asymmetri&shy;sche Verschlüssel&shy;ung). Letzteres bietet neben einer sicheren Einwahl ebenfalls den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
 Um eine passwort&shy;lose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
 
 1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
