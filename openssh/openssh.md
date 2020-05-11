@@ -49,6 +49,9 @@ Wandlung vom OpenSSH-Format in SSH2-Format:
 Die Auswahl spezifischer Verschlüsselungs&shy;verfahren geschieht über den Schalter `-c`, nicht mit `-C` für das aktivieren der Kompression zu verwechseln. Bei der Auswahl eines nicht unterstützten Verfahrens wird eine Liste der möglichen Verfahren ausgegeben: `ssh -c aes128-ctr user@host`
 Die Ausgabe der unterstützten Verschlüssel&shy;ungs&shy;verfahren (seit Version v6.3) lässt sich über `ssh -Q cipher` ausgeben. Zur Fehler&shy;suche lassen sich detaillierte Informationen über `ssh -v` anzeigen. Die Ausgabe der OpenSSH-Version geschieht per `ssh -V`.
 
+## Unterbrechnung einer OpenSSH-Verbindung
+Um bei einer bestehenden OpenSSH-Verbindung einen Befehl auf der lokalen Kommando&shy;zeile ausführen zu können kann die Verbindung mittels `[Return]~[Strg]+'z'` in den Hinter&shy;grund gesetzt werden. Die übliche Eingabe von `[Strg]+'+'` ist nicht aus&shy;rei&shy;chend, da alle Eingaben an den entfernten Rechner weitergeleitet werden. Durch Verwendung des Escape-Zeichens `[Return]~` lässt sich dies umgehen. So lässt sich die OpenSSH-Verbindung wie bei lokalen Kommandos üblich in den Hintergrund versetzen und steht unter der Job-Kontrolle. Durch Eingabe von `fg` lässt sich die Verbindung wieder in den Vordergrund holen. 
+
 ## SSH-Alternative für Verbindungen über roaming
 Die mosh (mobile shell) ermöglicht roaming und handover von bestehenden Verbind&shy;ungen. Somit ist es möglich eine Einwahl zwischen ver&shy;schiede&shy;nen Verbind&shy;ungs&shy;arten (GSM, LTE, WLAN) und der Nutzung des Ruhemodus des Rechners ohne Ver&shy;bindungs&shy;abbruch zu nutzen. Weiterhin ist der im Vergleich zu SSH niedrigere Bandbreitenbedarf und eine verbesserte Latenz zu nennen. Dies ist möglich, da mosh UDP (connection-less) anstelle von TCP (connection-oriented) verwendet, dadurch entfällt das Handshake. Des weiteren verwendet mosh ein lokales Echo (Eingaben werden soweit möglich lokal dargestellt ohne übertragen zu werden) und es werden Verfahren genutzt, die ähnlich zu diff und patch arbeiten. Daher muss nicht der gesamt Bildschirminhalt bei einer Änderung übertragen werden.
 
@@ -61,3 +64,21 @@ Start von Pageant mit privaten Schlüsseln:
 `pageant.exe C:\private1.ppk C:\private2.ppk`
 <!-- ![MM](pictures/Putty_color.png)   -->
 <!-- ![MM](/openssh/pictures/Putty_color.png) -->
+
+## Todo
+1. Nachvollziehen der Beschreibung
+1. `ssh-keygen -R` zum löschen von Schlüseln
+1. Überprüfung des angezeigten Serverschhüssels
+1. Deaktivieren der Einwahl per Passwort auf dem sshd
+1. Neustart des sshd auf Ubuntu
+1. Dateien kopieren mittels `scp`
+1. Test offener Ports mittels telnet
+   ```
+   telnet <host> 22
+   -
+   SSH-2.0-OpenSSH_8.0
+   -
+   Strg+'+'
+   -
+   quit
+   ```
