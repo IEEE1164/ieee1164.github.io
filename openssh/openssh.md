@@ -1,7 +1,7 @@
 <!-- soft hyphen &shy; -->
 # Secure Shell
 
-Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt. Dessen kommerzielle Software von der Firma Tectia entwickelt wird. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch die Secure Shell Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.  
+Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt. Dessen kommerzielle Software von der Firma Tectia entwickelt wird. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch eine Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.  
 ```bash
 # Einwahl per Benutzername und Passwort
 $ ssh user@host
