@@ -1,21 +1,20 @@
 <!-- soft hyphen &shy; -->
 # Secure Shell
 
-Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt. Dessen kommerzielle Software von der Firma Tectia entwickelt wird. OpenSSH ist eine weit verbreitete quelloffene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch eine Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.  
+Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Die Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt, dessen kommerzielle Weiter&shy;ent&shy;wick&shy;lung von der Firma Tectia über&shy;nommen wird. OpenSSH ist eine ver&shy;brei&shy;te&shy;te quell&shy;offene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch eine Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.  
 ```bash
 # Einwahl per Benutzername und Passwort
 $ ssh user@host
 ```  
 ## Einwahl über Public-Key
-Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren (asymmetri&shy;sche Verschlüssel&shy;ung). Letzteres bietet neben einer sicheren Ein&shy;wahl ebenfalls den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben.
-Um eine passwort&shy;lose Einwahl mit Hilfe von Public-Keys zu ermöglichen müssen folgende Schritte durch&shy;laufen werden.
+Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren (asymmetri&shy;sche Verschlüssel&shy;ung). Letzteres bietet den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben. Dafür müssen folgende Schritte durch&shy;laufen werden.
 
 1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
-1. Übertragen des Public-Keys auf den ent&shy;fernten Rechner (eintragen in die SSH-Konfigurations&shy;datei).
+1. Übertragen des Public-Keys auf den ent&shy;fernten Rechner.
 1. Anpassen der Zugriffsrechte für die Konfigurationsdatei.
 1. Testen der Verbindung. 
 
-Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen und vor fremdem Zugriff geschützt werden muss. Der Public-Key kann und muss jedoch frei verteilt werden. Es ist ratsam den Datei&shy;namen zu definieren. Zum einen sorgt dies für eine einfache Zu&shy;ord&shy;nung von Schlüsseldateien zu Verbindungs&shy;partnern und zum anderen wird damit vermieden versehentlich falsche Schlüssel zu über&shy;tragen. Das Übertragen des Public-Keys auf den entfernten Rechner. Dabei wird der öffentliche Schlüssel des Nutzers in die Datei `~/.ssh/authorized_keys` kopiert bzw. angehängt. Der Befehl `ssh-copy-id` ist keine ausführbare Datei, sondern ein Shell-Skript. Er steht somit nur unter Linux zur Verfügung. Die Namens&shy;konvention von OpenSSH versieht den öffentlichen Schlüssel mit einer Endung, den privaten jedoch nicht (public `file.pub`, privat `file`). 
+Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen und vor fremdem Zugriff geschützt werden muss. Der Public-Key kann und muss jedoch frei verteilt werden. Es ist ratsam den Datei&shy;namen zu definieren. Zum einen sorgt dies für eine einfache Zu&shy;ord&shy;nung von Schlüsseldateien zu Verbindungs&shy;partnern und zum anderen wird damit vermieden versehentlich falsche Schlüssel zu über&shy;tragen. Nach dem Übertragen des Public-Keys auf den entfernten Rechner wird dieser in die Datei `~/.ssh/authorized_keys` kopiert bzw. angehängt. Dazu kann `ssh-copy-id` verwendet werden. Dieser Befehl ist keine ausführbare Datei, sondern ein Shell-Skript. Er steht somit nur unter Linux zur Verfügung. Auf Windows-Rechnern muss die Datei daher vom Nutzer auf den entfernten Rechner kopiert und eingetragen werden. Die Namens&shy;konvention von OpenSSH versieht den öffentlichen Schlüssel mit einer Endung, den privaten jedoch nicht (public `file.pub`, privat `file`). 
 
 > Der Private-Key wird nie übertragen, er verbleibt auf dem Rechner von dem aus die Einwahl initiiert wird.
 
