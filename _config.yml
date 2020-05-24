@@ -3,7 +3,7 @@
 #theme: minima
 #site_favicon: favicon-96x96.png
 #theme: minimal
-markdown: kramdown
+#markdown: kramdown
 highlighter: rouge
 #kramdown:
 #  input: GFM
@@ -16,6 +16,11 @@ highlighter: rouge
 #      line_numbers: true
 #      start_line: 1
 compress_html:
-  clippings: all
-  comments:  all
-  endings:   all
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
