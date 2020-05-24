@@ -15,9 +15,9 @@ highlighter: rouge
 #    block:
 #      line_numbers: true
 #      start_line: 1
-gem install jekyll-minifier
-plugins:
-    - jekyll-minifier
+
+#plugins:
+#    - jekyll-minifier
 #compress_html:
  # clippings: []
  # comments: []
