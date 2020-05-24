@@ -12,7 +12,7 @@ Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege gescheh
 1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
 1. Übertragen des Public-Keys auf den ent&shy;fernten Rechner.
 1. Anpassen der Zugriffsrechte für die Konfigurationsdatei.
-1. Testen der Verbindung. 
+1. Testen der Verbindung.
 
 Es ist darauf zu achten, dass der Private-Key mittels Zugriffsrechten versehen und vor fremdem Zugriff geschützt werden muss. Der Public-Key kann und muss jedoch frei verteilt werden. Es ist ratsam den Datei&shy;namen zu definieren. Zum einen sorgt dies für eine einfache Zu&shy;ord&shy;nung von Schlüsseldateien zu Verbindungs&shy;partnern und zum anderen wird damit vermieden versehentlich falsche Schlüssel zu über&shy;tragen. Nach dem Übertragen des Public-Keys auf den entfernten Rechner wird dieser in die Datei `~/.ssh/authorized_keys` kopiert bzw. an&shy;ge&shy;hängt. Dazu kann `ssh-copy-id` verwendet werden. Dieser Befehl ist keine ausführbare Datei, sondern ein Shell-Skript. Er steht somit nur unter Linux zur Verfügung. Auf Windows-Rechnern muss die Datei daher vom Nutzer auf den entfernten Rechner kopiert und eingetragen werden. Die Namens&shy;konvention von OpenSSH versieht den öffentlichen Schlüssel mit einer Endung, den privaten jedoch nicht (public `file.pub`, privat `file`). 
 
