@@ -86,4 +86,4 @@ Start von Pageant mit privaten Schlüsseln:
    quit
    ```
 1. Verwendung des Agents `eval $(ssh-agent)`
-1. 
+1. /etc/dropbear/authorized_keys
