@@ -1,29 +1,4 @@
-#theme: jekyll-theme-cayman
-#theme: jekyll-theme-leap-day
-#theme: minima
 #site_favicon: favicon-96x96.png
 #theme: minimal
 markdown: kramdown
 highlighter: rouge
-#kramdown:
-#  input: GFM
-#  syntax_highlighter_opts:
-#    default_lang: html
-#    css_class: 'highlight'
-#    span:
-#      line_numbers: false
-#    block:
-#      line_numbers: true
-#      start_line: 1
-
-#plugins:
-#    - jekyll-minifier
-#compress_html:
- # clippings: []
- # comments: []
- # endings: []
- # ignore:
- # envs: []
- # blanklines: false
- #  profile: false
- #  startings: []
