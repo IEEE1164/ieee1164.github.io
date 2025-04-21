@@ -85,7 +85,7 @@ Start von Pageant mit privaten Schlüsseln:
 1. Neustart des sshd auf Ubuntu
 1. Dateien kopieren mittels `scp`
 1. Test offener Ports mittels telnet
-   ```
+   ```text
    telnet <host> 22
    -
    SSH-2.0-OpenSSH_8.0
