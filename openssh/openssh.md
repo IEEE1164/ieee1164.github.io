@@ -1,5 +1,6 @@
 <!-- soft hyphen &shy; -->
 <meta name="description" content="Put your description here.">
+<meta name="description" content="150 words"/>
 <!---
 [comment]: ---
 [comment]: title: Secure Shell
