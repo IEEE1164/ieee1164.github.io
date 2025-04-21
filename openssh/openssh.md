@@ -77,9 +77,12 @@ Start von Pageant mit privaten Schlüsseln:
 `pageant.exe C:\private1.ppk C:\private2.ppk`
 <!-- ![MM](pictures/Putty_color.png)   -->
 <!-- ![MM](/openssh/pictures/Putty_color.png) -->
-
-![Putty](/openssh/pictures/Putty_color.png)
+<!--![Putty](/openssh/pictures/Putty_color.png) -->
 <!--*{:height="436px" width="456px"}*-->
+<figure>
+<img src="/openssh/pictures/Putty_color.png" width="435" height="456" alt="Image description">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
 
 ## Todo
 1. Nachvollziehen der Beschreibung
