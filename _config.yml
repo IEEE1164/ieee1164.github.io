@@ -5,3 +5,5 @@ description: Short summary.
 highlighter: rouge
 plugins:
     - jekyll-seo-tag
+    # Build settings
+remote_theme: jekyll/minima
