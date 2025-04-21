@@ -1,6 +1,6 @@
 <!-- soft hyphen &shy; -->
-<meta name="description" content="Put your description here.">
-<link rel="shortcut icon" type="image/x-icon" href="/openssh/pictures/favicon.ico">
+<!-- <meta name="description" content="Put your description here.">-->
+<!-- <link rel="shortcut icon" type="image/x-icon" href="/openssh/pictures/favicon.ico">-->
 
 # Secure Shell
 
