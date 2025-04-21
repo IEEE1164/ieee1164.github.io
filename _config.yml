@@ -1,7 +1,12 @@
 site_favicon: favicon.ico
+# Site settings
+title: Great New Blog Title
+author:
+  name: Willi Wichtig
+  email: your-email@domain.com
+description: "Great site about Jekyll on GH-Pages."
 #theme: minimal
 markdown: kramdown
-description: Short summary.
 highlighter: rouge
 plugins:
     - jekyll-seo-tag
