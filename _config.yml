@@ -1,6 +1,7 @@
 site_favicon: favicon-96x96.png
 #theme: minimal
 #markdown: kramdown
+description: Short summary.
 highlighter: rouge
 plugins:
     - jekyll-seo-tag
