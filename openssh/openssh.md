@@ -1,6 +1,9 @@
 <!-- soft hyphen &shy; -->
-
+---
+title: Secure Shell
+excerpt: Testpage explanining the OpenSSH usage in German.
 seo-description: Testpage explanining the OpenSSH usage in German.
+---
 
 # Secure Shell
 
