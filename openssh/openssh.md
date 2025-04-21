@@ -1,13 +1,5 @@
 <!-- soft hyphen &shy; -->
 <meta name="description" content="Put your description here.">
-<meta name="description" content="150 words"/>
-<!---
-[comment]: ---
-[comment]: title: Secure Shell
-[comment]: excerpt: Testpage explanining the OpenSSH usage in German.
-[comment]: seo-description: Testpage explanining the OpenSSH usage in German.
-[comment]: ---
--->
 
 # Secure Shell
 
