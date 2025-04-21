@@ -1,5 +1,5 @@
 <!-- soft hyphen &shy; -->
-
+<meta name="description" content="Put your description here.">
 <!---
 [comment]: ---
 [comment]: title: Secure Shell
