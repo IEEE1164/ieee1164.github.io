@@ -73,7 +73,7 @@ Start von Pageant mit privaten Schlüsseln:
 <!--![Putty](/openssh/pictures/Putty_color.png) -->
 <!--*{:height="436px" width="456px"}*-->
 <figure>
-<img src="/openssh/pictures/Putty_color.png" width="435" height="456" alt="Image description">
+<img src="/openssh/pictures/Putty_color.png" width="456" height="436" alt="Image description">
   <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
 </figure>
 
