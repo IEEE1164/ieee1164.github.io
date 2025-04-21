@@ -8,7 +8,7 @@ Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die P
 ```bash
 # Einwahl per Benutzername und Passwort
 $ ssh user@host
-```  
+```
 ## Einwahl über Public-Key
 Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren (asymmetri&shy;sche Verschlüssel&shy;ung). Letzteres bietet den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben. Dafür müssen folgende Schritte durch&shy;laufen werden.
 
@@ -35,7 +35,7 @@ Setzen der Rechte der Konfigurationsdatei:
 
 ## Schnellzugriff per Konsole
 Um einen Schnellzugriff auf SSH-Verbind&shy;ungen aus der Konsole heraus zu ermöglichen sind folgende Schritte erforderlich. Erstens Anlegen der Datei `~/.ssh/config`. Zweitens kopieren des unten stehenden Inhalts in diese Datei. Danach lässt sich eine OpenSSH-Verbind&shy;ung in der Konsole über die Eingabe von `ssh shortcut` aufbauen.
-```ssh-config
+```sshconfig
 ### ~/.ssh/config ###
 Host shortcut
   HostName host.net
