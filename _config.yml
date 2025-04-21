@@ -3,10 +3,6 @@ site_favicon: favicon.ico
 markdown: kramdown
 description: Short summary.
 highlighter: rouge
-kramdown:
-    syntax_highlighter_opts:
-        block:
-            line_numbers: true
 plugins:
     - jekyll-seo-tag
     # Build settings
