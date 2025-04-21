@@ -7,3 +7,4 @@ plugins:
     - jekyll-seo-tag
     # Build settings
 remote_theme: jekyll/minima
+<link rel="shortcut icon" type="image/x-icon" href="wt/favicon.ico">
