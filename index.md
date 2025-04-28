@@ -1,9 +1,3 @@
----
-layout: page
-title: Abouter
----
-
-
 <!-- {% include_relative /gnuplot/gnuplot.md %} -->
 
 {% include_relative /openssh/openssh.md %}
