@@ -1,12 +1,11 @@
 # Secure Shell
-
 Als Secure Shell werden sowohl die unter&shy;lagerten Protokolle, als auch die Programme die zusammen die Funktionalität der Secure Shell darstellen bezeichnet. Sie er&shy;möglichen den verschlüsselten Zugang zur Kommando&shy;zeile entfernter Rechner und den ebenfalls ver&shy;schlüsselten Daten&shy;transfer. Die Secure Shell wurde ursprünglich von dem Finnen Tatu Ylönen ent&shy;wickelt, dessen kommerzielle Weiter&shy;ent&shy;wick&shy;lung von der Firma Tectia über&shy;nommen wird. OpenSSH ist eine ver&shy;brei&shy;te&shy;te quell&shy;offene Variante die auch in diesem Dokument genutzt wird. Zu nennen ist noch eine Variante namens Dropbear, deren Fokus auf ein&shy;ge&shy;betteten Systemen liegt.  
 ```bash
 # Einwahl per Benutzername und Passwort
 $ ssh user@host
 ```
-## Einwahl über Public-Key
 
+## Einwahl über Public-Key
 Die Authen&shy;ti&shy;fizierung des Nutzers kann über verschiedene Wege geschehen, u. a. durch die Eingabe von Benutzer&shy;name und Passwort oder durch das Public-Key Verfahren (asymmetri&shy;sche Verschlüssel&shy;ung). Letzteres bietet den Komfort der passwort&shy;losen Einwahl. Im weiteren wird die Ein&shy;richtung und Nutzung des Public-Key Verfahrens beschrieben. Dafür müssen folgende Schritte durch&shy;laufen werden.
 
 1. Erzeugung des Schlüssel&shy;paars (Private-Key und Public-Key).
